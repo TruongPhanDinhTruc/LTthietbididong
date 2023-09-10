@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tinhTienTip(tien) {
+            var tienTip;
+            if(tien > 300)
+                return tienTip = tien*0.2;
+            if(tien < 50)
+                return tienTip = 0;
+            return tienTip = tien*0.15;
+        }
+        console.log("Data 1");
+        var tien1 = 275;
+        var tienTip1 = tinhTienTip(tien1);
+        console.log('The bill was ' + tien1 + ', the tip was ' + tienTip1 + ', and the total value ' + (tien1 + tienTip1) + '');
+        console.log("Data 2");
+        var tien2 = 40;
+        var tienTip2 = tinhTienTip(tien2);
+        console.log('The bill was ' + tien2 + ', the tip was ' + tienTip2 + ', and the total value ' + (tien2 + tienTip2) + '');
+        console.log("Data 3");
+        var tien3 = 430;
+        var tienTip3 = tinhTienTip(tien3);
+        console.log('The bill was ' + tien3 + ', the tip was ' + tienTip3 + ', and the total value ' + (tien3 + tienTip3) + '');
+    </script>
+</body>
+</html>

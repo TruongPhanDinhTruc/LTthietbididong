@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tinhDiemTB(diem1, diem2, diem3) {
+            var diemTB = (diem1+diem2+diem3)/3
+            return diemTB;
+        }
+        console.log("Data 1");
+        var diemTBDolphin = Math.round(tinhDiemTB(96, 108, 89));
+        var diemTBKoala = Math.round(tinhDiemTB(88, 91, 110));
+        console.log("Diem trung binh Dolphin: ", diemTBDolphin);
+        console.log("Diem trung binh Koala: ", diemTBKoala);
+        function kiemTraKQ(diemTBDolphin, diemTBKoala) {
+            if((diemTBDolphin && diemTBKoala) < 100)
+                return console.log("Ca 2 doi deu thua");
+            
+            if(diemTBDolphin == diemTBKoala)
+                return console.log("Ket qua: Hoa");
+            if(diemTBDolphin > diemTBKoala)
+                return console.log("Doi Dolphin thang, doi Koala thua");
+            if(diemTBDolphin < diemTBKoala)
+                return console.log("Doi Koala thang, doi Dolphin thua");
+        }
+        kiemTraKQ(diemTBDolphin, diemTBKoala);
+        console.log("Data 2");
+        var diemTBDolphin1 = Math.round(tinhDiemTB(97, 112, 101));
+        var diemTBKoala1 = Math.round(tinhDiemTB(109, 95, 123));
+        console.log("Diem trung binh Dolphin: ", diemTBDolphin1);
+        console.log("Diem trung binh Koala: ", diemTBKoala1);
+        kiemTraKQ(diemTBDolphin1, diemTBKoala1);
+        console.log("Data 3");
+        var diemTBDolphin2 = Math.round(tinhDiemTB(97, 112, 101));
+        var diemTBKoala2 = Math.round(tinhDiemTB(109, 95, 106));
+        console.log("Diem trung binh Dolphin: ", diemTBDolphin2);
+        console.log("Diem trung binh Koala: ", diemTBKoala2);
+        kiemTraKQ(diemTBDolphin2, diemTBKoala2);
+    </script>
+</body>
+</html>
